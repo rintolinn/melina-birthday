@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
         img.style.position = "absolute";
         img.style.top = `${Math.random() * (window.innerHeight - 200)}px`;
         img.style.left = `${Math.random() * (window.innerWidth - 200)}px`;
-        img.style.width = "14%"; // updated size
-        img.style.height = "31%";
+        img.style.width = "145px"; // updated size
+        img.style.height = "145px";
         img.style.zIndex = "1";
         document.body.appendChild(img);
       });
