@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
         img.style.position = "absolute";
         img.style.top = `${Math.random() * (window.innerHeight - 150)}px`;
         img.style.left = `${Math.random() * (window.innerWidth - 150)}px`;
-        img.style.maxWidth = "12%";
-        img.style.maxHeight = "12%";
+        img.style.maxWidth = "180px";
+        img.style.maxHeight = "180px";
         img.style.zIndex = "1";
         document.body.appendChild(img);
       });
@@ -152,3 +152,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load first song by default
   loadSong(currentSongIndex);
 });
+
