@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press Me Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Press Me Button -->
+  <button id="pressBtn">Press Me</button>
+
+  <!-- First Video -->
+  <video id="videoDisplay" width="640" height="360" controls style="display:none;">
+    <source src="video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Second Video -->
+  <video id="videoDisplay2" width="640" height="360" controls style="display:none;">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Music Player Bar -->
+  <div id="musicPlayer">
+    <button id="prevBtn">⏮</button>
+    <button id="playPauseBtn">▶️</button>
+    <button id="nextBtn">⏭</button>
+    <span id="songTitle">Song 1</span>
+    <input type="range" id="progressBar" value="0" max="100">
+    <span id="timeDisplay">0:00 / 0:00</span>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+    <audio id="audioPlayer"></audio>
+  </div>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
