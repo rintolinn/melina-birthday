@@ -32,10 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = src;
         img.classList.add("collage-img");
         img.style.position = "absolute";
+		
         img.style.top = `${Math.random() * (window.innerHeight - 200)}px`;
         img.style.left = `${Math.random() * (window.innerWidth - 200)}px`;
-        img.style.width = "145px"; // updated size
-        img.style.height = "145px";
+		
+        let imgWidth = window.innerWidth <= 600 ? 120 : 180;
+		img.style.width = imgWidth + "px";
+		img.style.height = "auto";
+
         img.style.zIndex = "1";
         document.body.appendChild(img);
       });
